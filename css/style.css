@@ -32,19 +32,6 @@
 }
 
 
-@keyframes slide {
-    0% {
-        transform: translateX(0);
-    }
-    100% {
-        transform: translateX(-100%);
-    }
-}
-
-.animate-sponsor-slide {
-    animation: slide 10s linear infinite; /* Adjust animation duration as needed */
-}
-
 
 .modal {
     display: none;
@@ -110,4 +97,24 @@
     to {
         opacity: 0;
     }
+}
+
+
+@media screen and (max-width: 768px) {
+
+    @keyframes slide {
+        0% {
+            transform: translateX(0);
+        }
+
+        100% {
+            transform: translateX(-100%);
+        }
+    }
+
+    .animate-sponsor-slide {
+        animation: slide 10s linear infinite;
+        /* Adjust animation duration as needed */
+    }
+
 }
