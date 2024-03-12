@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TEDxKanke : Ideas worth spreading</title>
+    <link rel="shortcut icon" href="assets/favicon.png" type="image/x-icon">
+
+    <!-- Tailwindcss -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+
+    <!-- Custome CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body class="bg-slate-50 font-sans">
+    <!-- Navigation Bar -->
+    <nav class="bg-gray-900 text-white p-4">
+        <div class="container mx-auto flex justify-between items-center max-w-screen-xl mx-auto">
+            <a href="/" class="flex items-center">
+                <img src="assets/asset 0.webp" alt="TEDxKanke Logo" class="h-12 mr-2">
+            </a>
+            <div class="block lg:hidden">
+                <button id="menu-toggle"
+                    class="flex items-center px-3 py-2 border rounded text-gray-200 border-gray-400 hover:text-white hover:border-white transition duration-300">
+                    <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                        <title>Menu</title>
+                        <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
+                    </svg>
+                </button>
+            </div>
+            <div class="hidden lg:block">
+
+                <a href="events.html" class="mx-2 transition duration-300 hover:text-gray-300">Events</a>
+                <a href="https://www.youtube.com/@TEDx"
+                    class="mx-2 transition duration-300 hover:text-gray-300">Talks</a>
+                <div class="dropdown inline-block relative">
+                    <button
+                        class="mx-2 transition duration-300 hover:text-gray-300 focus:outline-none">Discover</button>
+                    <ul class="dropdown-menu absolute hidden text-gray-700 pt-1">
+                        <li><a href="events.html"
+                                class="whitespace-nowrap block py-2 w-full px-2 text-sm text-white bg-gray-800 transition duration-300">TEDxKanke
+                                Events</a></li>
+                        <li><a href="https://www.flickr.com/photos/tedxkanke/"
+                                class="whitespace-nowrap block py-2 w-full px-2 text-sm text-white bg-gray-800 transition duration-300">Gallery</a>
+                        </li>
+                        <li>
+                        </li>
+                        <!-- Add more options as needed -->
+                    </ul>
+                </div>
+                <a href="speaker.html" class="mx-2 transition duration-300 hover:text-gray-300">Speakers</a>
+                <a href="#about" class="mx-2 transition duration-300 hover:text-gray-300">About</a>
+                <a href="#joinus" class="mx-2 transition duration-300 hover:text-gray-300">Join Us</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="bg-gray-900 text-white px-4 pt-2 pb-8 lg:hidden" style="display: none;">
+        <a href="event.html" class="block py-2 px-4 text-sm text-white bg-gray-800 transition duration-300">Events</a>
+        <a href="https://www.youtube.com/@TEDx" class="mx-2 transition duration-300 hover:text-gray-300">Talks</a>
+        <div class="dropdown inline-block relative">
+            <button class="mx-2 transition duration-300 hover:text-gray-300 focus:outline-none">Discover</button>
+            <ul class="dropdown-menu absolute hidden text-gray-700 pt-1">
+                <li><a href="events.html"
+                        class="whitespace-nowrap block py-2 w-full px-2 text-sm text-white bg-gray-800 transition duration-300">TEDxKanke
+                        Events</a></li>
+                <li><a href="https://www.flickr.com/photos/tedxkanke/"
+                        class="whitespace-nowrap block py-2 w-full px-2 text-sm text-white bg-gray-800 transition duration-300">Gallery</a>
+                </li>
+                <li>
+                </li>
+                <!-- Add more options as needed -->
+            </ul>
+        </div>
+        <a href="#speakers" class="block py-2 px-4 text-sm hover:bg-gray-800 transition duration-300">Speakers</a>
+        <a href="events.html"
+            class="whitespace-nowrap block py-2 w-full px-2 text-sm text-white bg-gray-800 transition duration-300">TEDxKanke
+            Events</a>
+        <a href="https://www.flickr.com/photos/tedxkanke/"
+            class="whitespace-nowrap block py-2 w-full px-2 text-sm text-white bg-gray-800 transition duration-300">Gallery</a>
+        <a href="#" class="block py-2 px-4 text-sm hover:bg-gray-800 transition duration-300">Media</a>
+        <a href="#about" class="block py-2 px-4 text-sm hover:bg-gray-800 transition duration-300">About</a>
+        <a href="#joinus" class="block py-2 px-4 text-sm hover:bg-gray-800 transition duration-300">Join Us</a>
+    </div>
+
+
+
+    <section class="text-gray-600 body-font ">
+        <h1 class="text-3xl font-bold sm:text-5xl xl:text-6xl/none text-center text-gray-800 my-8">See Our Gallery</h1>
+        <div class="container px-5 mx-auto flex flex-wrap mb-8">
+
+
+            <div class="flex flex-wrap md:-m-2 -m-1">
+                <div class="flex flex-wrap w-1/2">
+                    <div class="md:p-2 p-1 w-1/2">
+                        <img alt="gallery" class="w-full object-cover h-full object-center block" src="assets/g1.jpg" />
+                    </div>
+                    <div class="md:p-2 p-1 w-1/2">
+                        <img alt="gallery" class="w-full object-cover h-full object-center block" src="assets/g2.jpg" />
+                    </div>
+                    <div class="md:p-2 p-1 w-full">
+                        <img alt="gallery" class="w-full h-full object-cover object-center block" src="assets/g3.jpg" />
+                    </div>
+                </div>
+                <div class="flex flex-wrap w-1/2">
+                    <div class="md:p-2 p-1 w-full">
+                        <img alt="gallery" class="w-full h-full object-cover object-center block" src="assets/g4.jpg" />
+                    </div>
+                    <div class="md:p-2 p-1 w-1/2">
+                        <img alt="gallery" class="w-full object-cover h-full object-center block" src="assets/g5.jpg" />
+                    </div>
+                    <div class="md:p-2 p-1 w-1/2">
+                        <img alt="gallery" class="w-full object-cover h-full object-center block" src="assets/g6.jpg" />
+                    </div>
+                </div>
+            </div>
+
+            <!-- Add spacing -->
+            <div class="h-4"></div>
+
+            <div class="flex flex-wrap md:-m-2 -m-1">
+                <div class="flex flex-wrap w-1/2">
+                    <div class="md:p-2 p-1 w-1/2">
+                        <img alt="gallery" class="w-full object-cover h-full object-center block" src="assets/g7.jpg" />
+                    </div>
+                    <div class="md:p-2 p-1 w-1/2">
+                        <img alt="gallery" class="w-full object-cover h-full object-center block" src="assets/g8.jpg" />
+                    </div>
+                    <div class="md:p-2 p-1 w-full">
+                        <img alt="gallery" class="w-full h-full object-cover object-center block" src="assets/g9.jpg" />
+                    </div>
+                </div>
+                <div class="flex flex-wrap w-1/2">
+                    <div class="md:p-2 p-1 w-full">
+                        <img alt="gallery" class="w-full h-full object-cover object-center block"
+                            src="assets/g10.jpg" />
+                    </div>
+                    <div class="md:p-2 p-1 w-1/2">
+                        <img alt="gallery" class="w-full object-cover h-full object-center block"
+                            src="assets/g11.jpg" />
+                    </div>
+                    <div class="md:p-2 p-1 w-1/2">
+                        <img alt="gallery" class="w-full object-cover h-full object-center block"
+                            src="assets/g12.jpg" />
+                    </div>
+                </div>
+            </div>
+
+            <!-- Add spacing -->
+            <div class="h-4"></div>
+
+            <div class="flex flex-wrap md:-m-2 -m-1">
+                <div class="flex flex-wrap w-1/2">
+                    <div class="md:p-2 p-1 w-1/2">
+                        <img alt="gallery" class="w-full object-cover h-full object-center block"
+                            src="assets/g13.jpg" />
+                    </div>
+                    <div class="md:p-2 p-1 w-1/2">
+                        <img alt="gallery" class="w-full object-cover h-full object-center block"
+                            src="assets/g14.jpg" />
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Footer Section -->
+    <footer class="bg-gray-900 text-white py-8">
+        <div class="container px-4 mx-auto">
+            <div class="footer-top flex justify-between items-center flex-wrap sm:flex-nowrap">
+                <div class="footer-bottom">
+                    <ul>
+                        <li><a href="partners.php">Knowledge Partners</a></li>
+                        <!-- <li><a href="partners.php">  Advertising</a></li> -->
+                        <li><a href="sponsors.php">Sponsorship</a> </li>
+                    </ul>
+
+
+                </div>
+                <div class="footer-bottom">
+                    <ul>
+                        <li><a href="privacy_policy.php">Privacy Policy</a> </li>
+                        <li><a href="terms_of_use.php">Terms of Use</a></li>
+                    </ul>
+                </div>
+                <div class="footer-bottom">
+                    <ul>
+                        <li><a href="contact.php">Contact us</a> </li>
+                        <li><a href="usage_policy.php">TED Talks Usage Policy</a> </li>
+                    </ul>
+                </div>
+                <div class="subscribe">
+                    <h4 class="text-lg font-semibold mb-4">Subscribe to our Newsletter</h4>
+                    <form action="#" method="POST" class="flex items-center">
+                        <input type="email" name="email" placeholder="Enter your email"
+                            class="w-full h-10 px-4 mr-2 rounded-md border border-gray-300 focus:ring-gray-900 focus:border-gray-900">
+                        <button type="submit"
+                            class="h-10 px-6 bg-gray-800 text-white rounded-md hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-gray-900">
+                            Subscribe
+                        </button>
+                    </form>
+                    <div class="social-icons mt-4">
+                        <a href="https://www.facebook.com/tedxkanke" class="text-white mr-4"><i
+                                class="fab fa-facebook-f"></i></a>
+                        <a href="https://twitter.com/tedxkanke" class="text-white mr-4"><i
+                                class="fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/tedxkanke2020/" class="text-white mr-4"><i
+                                class="fab fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/company/tedxkanke/" class="text-white mr-4"><i
+                                class="fab fa-linkedin-in"></i></a>
+                        <a href="https://www.youtube.com/c/TEDxKanke" class="text-white mr-4"><i
+                                class="fa-brands fa-youtube"></i></a>
+                        <!-- Add more social icons as needed -->
+                    </div>
+                </div>
+            </div>
+            <p class="text-center text-gray-400 mt-8">&copy; 2024 TEDxKanke. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+
+</html>
