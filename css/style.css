@@ -42,7 +42,7 @@
 }
 
 .animate-sponsor-slide {
-    animation: slide 5s linear infinite; /* Adjust animation duration as needed */
+    animation: slide 10s linear infinite; /* Adjust animation duration as needed */
 }
 
 
