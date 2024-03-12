@@ -61,7 +61,7 @@
 
     <!-- Mobile Menu -->
     <div id="mobile-menu" class="bg-gray-900 text-white px-4 pt-2 pb-8 lg:hidden" style="display: none;">
-        <a href="#" class="block py-2 px-4 text-sm hover:bg-gray-800 transition duration-300">Home</a>
+        <!-- <a href="#" class="block py-2 px-4 text-sm hover:bg-gray-800 transition duration-300">Home</a> -->
         <div class="dropdown inline-block relative">
             <button class="mx-2 transition duration-300 hover:text-gray-300 focus:outline-none">Events</button>
             <ul class="dropdown-menu absolute hidden text-gray-700 pt-1">
@@ -103,10 +103,14 @@
                                 Explore ideas worth spreading and join us for an inspiring journey at TEDxKanke.
                             </p>
                         </div>
-                        <div class="w-full max-w-sm space-y-2">
-                            <button id="openModal"
-                                class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 text-primary-foreground text-white h-10 px-4 py-2 rounded-lg shadow-sm bg-gray-900 hover:bg-gray-800 focus:ring-gray-900">
-                                <span class="mr-2">Upcomming Events</span>
+                        <div class="w-full max-w-sm space-y-2 space-x-3">
+                            <button
+                                class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 text-primary-foreground text-white h-10 px-4 py-2 rounded shadow-sm bg-gray-900 hover:bg-white hover:text-gray-800 border hover:border-gray-800 focus:ring-gray-900">
+                                <span class="m-2">Upcomming Events</span>
+                            </button>
+                            <button
+                                class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 text-primary-foreground text-white h-10 px-4 py-2 rounded shadow-sm text-gray-800 hover:text-white border border-gray-800 hover:bg-gray-800 focus:ring-gray-900">
+                                <a href="#joinus" class="m-2">Join Us</a>
                             </button>
                         </div>
                     </div>
@@ -115,14 +119,14 @@
         </section>
 
         <!-- About Section -->
-        <section class="w-full my-4 py-6 md:py-24 lg:py-32 bg-gray-200 rounded-lg" id="about">
+        <section class="w-full my-4 py-6 md:py-24 lg:py-32 bg-gray-200 rounded" id="about">
             <div class="container px-4 md:px-6">
                 <div class="flex flex-col items-center justify-center space-y-4 text-center">
                     <div class="space-y-2">
-                        <div class="inline-block rounded-lg bg-gray-100 px-3 py-1 text-sm dark:bg-gray-800">
+                        <div class="inline-block rounded bg-gray-100 px-3 py-1 text-sm dark:bg-gray-800">
                             Inspirational Talks
                         </div>
-                        <h2 class="text-3xl font-bold sm:text-5xl">About TEDxKanke</h2>
+                        <h2 class="text-3xl font-bold sm:text-5xl text-center">About TEDxKanke</h2>
                         <p
                             class="max-w-[900px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
                             TEDxKanke brings together visionaries and change-makers to share their ideas and inspire
@@ -168,11 +172,11 @@
         </section>
 
         <!-- Speakers Section -->
-        <section class="w-full py-12 md:py-24 lg:py-32 bg-white rounded-lg" id="speakers">
+        <section class="w-full py-12 md:py-24 lg:py-32 bg-white rounded" id="speakers">
             <div class="container px-4 md:px-6">
                 <div class="flex flex-col items-center justify-center space-y-4 text-center">
                     <div class="space-y-2">
-                        <div class="inline-block rounded-lg bg-gray-100 px-3 py-1 text-sm dark:bg-gray-800">
+                        <div class="inline-block rounded bg-gray-100 px-3 py-1 text-sm dark:bg-gray-800">
                             Inspiring Voices
                         </div>
                         <h2 class="text-3xl font-bold sm:text-5xl">Meet Our Speakers</h2>
@@ -185,7 +189,7 @@
                 </div>
                 <div class="grid grid-cols-1 gap-8 mt-12 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
                     <!-- Speaker Card -->
-                    <div class="max-w-xs bg-white shadow-lg rounded-lg overflow-hidden mx-auto">
+                    <div class="max-w-xs bg-white shadow-lg rounded overflow-hidden mx-auto">
                         <img class="w-full h-56 object-cover object-center" src="/assets/nalini.webp" alt="speaker">
                         <div class="p-4">
                             <h2 class="text-gray-800 font-bold text-xl mb-2">Nalini Shekhar</h2>
@@ -195,7 +199,7 @@
                         </div>
                     </div>
                     <!-- Speaker Card -->
-                    <div class="max-w-xs bg-white shadow-lg rounded-lg overflow-hidden mx-auto">
+                    <div class="max-w-xs bg-white shadow-lg rounded overflow-hidden mx-auto">
                         <img class="w-full h-56 object-cover object-center" src="/assets/shaurya.webp" alt="speaker">
                         <div class="p-4">
                             <h2 class="text-gray-800 font-bold text-xl mb-2">Shaurya Tarni</h2>
@@ -205,7 +209,7 @@
                         </div>
                     </div>
                     <!-- Speaker Card -->
-                    <div class="max-w-xs bg-white shadow-lg rounded-lg overflow-hidden mx-auto">
+                    <div class="max-w-xs bg-white shadow-lg rounded overflow-hidden mx-auto">
                         <img class="w-full h-56 object-cover object-center" src="/assets/asset 3.webp" alt="speaker">
                         <div class="p-4">
                             <h2 class="text-gray-800 font-bold text-xl mb-2">Shivalik Prasad</h2>
@@ -215,7 +219,7 @@
                         </div>
                     </div>
                     <!-- Speaker Card -->
-                    <div class="max-w-xs bg-white shadow-lg rounded-lg overflow-hidden mx-auto">
+                    <div class="max-w-xs bg-white shadow-lg rounded overflow-hidden mx-auto">
                         <img class="w-full h-56 object-cover object-center" src="/assets/asset 4.webp" alt="speaker">
                         <div class="p-4">
                             <h2 class="text-gray-800 font-bold text-xl mb-2">Martin Dubois</h2>
@@ -224,149 +228,195 @@
                                 elit.</p> -->
                         </div>
                     </div>
-
-
-
                     <!-- Repeat this structure for each speaker -->
                 </div>
             </div>
         </section>
 
+        <!-- Sponsers -->
+        <section class="overflow-hidden my-4">
+            <div class="flex justify-end space-x-6 animate-marquee">
+                <img src="assets/sp1.webp" alt="Sponsor Logo" class="w-auto h-12">
+                <img src="assets/sp2.webp" alt="Sponsor Logo" class="w-auto h-12">
+                <img src="assets/sp3.webp" alt="Sponsor Logo" class="w-auto h-12">
+                <img src="assets/sp4.webp" alt="Sponsor Logo" class="w-auto h-12">
+                <img src="assets/sp5.webp" alt="Sponsor Logo" class="w-auto h-12">
+                <img src="assets/sp6.webp" alt="Sponsor Logo" class="w-auto h-12">
+                <img src="assets/sp7.webp" alt="Sponsor Logo" class="w-auto h-12">
+                <img src="assets/sp8.webp" alt="Sponsor Logo" class="w-auto h-12">
+                <img src="assets/sp9.webp" alt="Sponsor Logo" class="w-auto h-12">
+                <!-- Add more sponsor logos as needed -->
+            </div>
+        </section>
+        
 
         <!-- Past Events Section -->
-        <section class="w-full my-4 py-12 md:py-24 lg:py-32 bg-gray-200 rounded-lg" id="upcoming-events">
+        <section class="w-full my-4 py-12 md:py-24 lg:py-32 bg-gray-200 rounded" id="upcoming-events">
             <div class="container px-4 md:px-6">
                 <div class="flex flex-col items-center justify-center space-y-4 text-center">
                     <div class="space-y-2">
-                        <div class="inline-block rounded-lg bg-gray-100 px-3 py-1 text-sm dark:bg-gray-800">
+                        <div class="inline-block rounded bg-gray-100 px-3 py-1 text-sm dark:bg-gray-800">
                             Memorable Moments
                         </div>
                         <h2 class="text-3xl font-bold sm:text-5xl">Past Popular Events</h2>
-                        <p class="max-w-[900px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
+                        <p
+                            class="max-w-[900px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
                             Take a look back at some of our most memorable events that have left a lasting impact.
                         </p>
                     </div>
                 </div>
-                
+
                 <div class="flex flex-wrap justify-center gap-11 mt-12">
                     <!-- Event Card -->
-                    <div class="max-w-xs bg-white shadow-lg rounded-lg overflow-hidden">
+                    <div class="max-w-xs bg-white shadow-lg rounded overflow-hidden">
                         <!-- YouTube Video Embed -->
                         <iframe width="100%" height="250" src="https://www.youtube.com/embed/UnWUAGK3sUQ"
                             title="Leaders for Tomorrow | Subhro Chatterjee | TEDxKankeSalon" frameborder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                             allowfullscreen></iframe>
                         <div class="p-4">
-                            <h2 class="text-gray-800 font-bold text-xl mb-2">Leaders for Tomorrow By Subhro Chatterjee</h2>
+                            <h2 class="text-gray-800 font-bold text-xl mb-2">Leaders for Tomorrow By Subhro Chatterjee
+                            </h2>
                         </div>
                     </div>
                     <!-- Event Card -->
-                    <div class="max-w-xs bg-white shadow-lg rounded-lg overflow-hidden">
+                    <div class="max-w-xs bg-white shadow-lg rounded overflow-hidden">
                         <!-- YouTube Video Embed -->
-                        <iframe width="100%" height="250" src="https://www.youtube.com/embed/EdczEx5RxeE?list=PLZbTD9N8IkS5m5s1mcRgkOE-Q_le26bd5"
+                        <iframe width="100%" height="250"
+                            src="https://www.youtube.com/embed/EdczEx5RxeE?list=PLZbTD9N8IkS5m5s1mcRgkOE-Q_le26bd5"
                             title="7 ways to become a Millionaire in the fast-pace Internet World  | Prashant Pitti | TEDxKanke"
                             frameborder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                             allowfullscreen></iframe>
                         <div class="p-4">
-                            <h2 class="text-gray-800 font-bold text-xl mb-2">7 ways to become a Millionaire in the fast-pace Internet World By Prashant Pitti</h2>
+                            <h2 class="text-gray-800 font-bold text-xl mb-2">7 ways to become a Millionaire in the
+                                fast-pace Internet World By Prashant Pitti</h2>
                         </div>
                     </div>
                     <!-- Event Card -->
-                    <div class="max-w-xs bg-white shadow-lg rounded-lg overflow-hidden">
+                    <div class="max-w-xs bg-white shadow-lg rounded overflow-hidden">
                         <!-- YouTube Video Embed -->
-                        <iframe width="100%" height="250" src="https://www.youtube.com/embed/he3hhClR7uQ?list=PLZbTD9N8IkS5eeBJnPbP3HQBaAOsU9MWr"
+                        <iframe width="100%" height="250"
+                            src="https://www.youtube.com/embed/he3hhClR7uQ?list=PLZbTD9N8IkS5eeBJnPbP3HQBaAOsU9MWr"
                             title="Breaking Barriers and Self Empowerment | Manju Jakhar | TEDxKanke" frameborder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                             allowfullscreen></iframe>
                         <div class="p-4">
-                            <h2 class="text-gray-800 font-bold text-xl mb-2">Breaking Barriers and Self Empowerment By Manju Jakhar</h2>
+                            <h2 class="text-gray-800 font-bold text-xl mb-2">Breaking Barriers and Self Empowerment By
+                                Manju Jakhar</h2>
                         </div>
                     </div>
                     <!-- Event Card -->
-                    <div class="max-w-xs bg-white shadow-lg rounded-lg overflow-hidden">
+                    <div class="max-w-xs bg-white shadow-lg rounded overflow-hidden">
                         <!-- YouTube Video Embed -->
                         <iframe width="100%" height="250" src="https://www.youtube.com/embed/5iE3P2leFoA"
                             title="Working together for Climate Ambition | Ovais Sarmad | TEDxKanke" frameborder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                             allowfullscreen></iframe>
                         <div class="p-4">
-                            <h2 class="text-gray-800 font-bold text-xl mb-2">Working together for Climate Ambition By Ovais Sarmad</h2>
+                            <h2 class="text-gray-800 font-bold text-xl mb-2">Working together for Climate Ambition By
+                                Ovais Sarmad</h2>
                         </div>
                     </div>
                     <!-- Event Card -->
-                    <div class="max-w-xs bg-white shadow-lg rounded-lg overflow-hidden">
+                    <div class="max-w-xs bg-white shadow-lg rounded overflow-hidden">
                         <!-- YouTube Video Embed -->
-                        <iframe width="425" height="233" src="https://www.youtube.com/embed/UnWUAGK3sUQ" title="Leaders for Tomorrow | Subhro Chatterjee | TEDxKankeSalon" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        <iframe width="425" height="233" src="https://www.youtube.com/embed/UnWUAGK3sUQ"
+                            title="Leaders for Tomorrow | Subhro Chatterjee | TEDxKankeSalon" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen></iframe>
                         <div class="p-4">
-                            <h2 class="text-gray-800 font-bold text-xl mb-2">Leaders for Tomorrow By Subhro Chatterjee</h2>
+                            <h2 class="text-gray-800 font-bold text-xl mb-2">Leaders for Tomorrow By Subhro Chatterjee
+                            </h2>
                         </div>
                     </div>
                     <!-- Event Card -->
-                    <div class="max-w-xs bg-white shadow-lg rounded-lg overflow-hidden">
+                    <div class="max-w-xs bg-white shadow-lg rounded overflow-hidden">
                         <!-- YouTube Video Embed -->
-                        <iframe width="425" height="233" src="https://www.youtube.com/embed/DYAsDwHW7Nc?list=PLZbTD9N8IkS7VnoenzDi3YYpch5syGt6d" title="Children are Ambassadors to lead the fight against Climate Change. | Licypriya Kangujam | TEDxKanke" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        <iframe width="425" height="233"
+                            src="https://www.youtube.com/embed/DYAsDwHW7Nc?list=PLZbTD9N8IkS7VnoenzDi3YYpch5syGt6d"
+                            title="Children are Ambassadors to lead the fight against Climate Change. | Licypriya Kangujam | TEDxKanke"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen></iframe>
                         <div class="p-4">
-                            <h2 class="text-gray-800 font-bold text-xl mb-2">Children are Ambassadors to lead the fight against Climate Change By Licypriya Kangujam</h2>
+                            <h2 class="text-gray-800 font-bold text-xl mb-2">Children are Ambassadors to lead the fight
+                                against Climate Change By Licypriya Kangujam</h2>
                         </div>
                     </div>
                     <!-- Repeat this structure for other events -->
                 </div>
-                
+
             </div>
         </section>
 
 
 
 
-        <!-- Contact Section -->
-        <section class="w-full my-6 py-12 md:py-24 lg:py-32 bg-gray-200 rounded-lg" id="contact">
-            <div class="container px-4 md:px-6">
-                <div class="flex flex-col items-center justify-center space-y-4 text-center">
+        <!-- Join Us Section -->
+        <section class="bg-white rounded mb-14">
+            <div class="w-full py-4 md:py-24 lg:py-32 max-w-screen-sm mx-auto" id="contact">
+                <div class="container grid gap-6 px-4 md:px-6">
                     <div class="space-y-2">
-                        <div class="inline-block rounded-lg bg-gray-100 px-3 py-1 text-sm dark:bg-gray-800">
-                            Get in Touch
+                        <h2 class="text-3xl font-bold sm:text-5xl text-center">Get Involved</h2>
+                        <p class="text-gray-500 dark:text-gray-400 text-center"> Interested in becoming a volunteer or
+                            sponsoring
+                            our events? Fill out the form below and let
+                            us know how you'd like to get involved.</p>
+                    </div>
+                    <div class="space-y-4">
+                        <div class="grid grid-cols-2 gap-4">
+                            <div class="space-y-2">
+                                <label for="first-name" class="text-sm font-medium">First Name</label>
+                                <input type="text" id="first-name"
+                                    class="flex h-10 w-full rounded border border-gray-300 px-3 py-2 text-sm focus:ring-gray-900 focus:border-gray-900"
+                                    placeholder="Enter your first name">
+                            </div>
+                            <div class="space-y-2">
+                                <label for="last-name" class="text-sm font-medium">Last Name</label>
+                                <input type="text" id="last-name"
+                                    class="flex h-10 w-full rounded border border-gray-300 px-3 py-2 text-sm focus:ring-gray-900 focus:border-gray-900"
+                                    placeholder="Enter your last name">
+                            </div>
                         </div>
-                        <h2 class="text-3xl font-bold sm:text-5xl">Contact Us</h2>
-                        <p
-                            class="max-w-[900px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
-                            Have questions or want to get involved? Reach out to us and we'll get back to you as
-                            soon as possible.
-                        </p>
-                    </div>
-                </div>
-                <div class="mt-12 grid grid-cols-1 md:grid-cols-2 gap-8">
-                    <div>
-                        <h3 class="text-lg font-semibold mb-2">Send us a Message</h3>
-                        <form action="#" method="POST" class="space-y-4">
-                            <div>
-                                <input type="text" name="name" id="name" placeholder="Your Name"
-                                    class="w-full px-4 py-3 border border-gray-300 rounded-lg">
-                            </div>
-                            <div>
-                                <input type="email" name="email" id="email" placeholder="Your Email"
-                                    class="w-full px-4 py-3 border border-gray-300 rounded-lg">
-                            </div>
-                            <div>
-                                <textarea name="message" id="message" rows="5" placeholder="Your Message"
-                                    class="w-full px-4 py-3 border border-gray-300 rounded-lg"></textarea>
-                            </div>
-                            <div>
-                                <button type="submit"
-                                    class="w-full px-4 py-3 text-white bg-gray-900 hover:bg-gray-800 rounded-lg transition duration-300">Send
-                                    Message</button>
-                            </div>
-                        </form>
-                    </div>
-                    <div>
-                        <h3 class="text-lg font-semibold mb-2">Contact Information</h3>
-                        <p class="text-gray-600"><i class="fas fa-map-marker-alt mr-2"></i>123 Main Street, Kanke</p>
-                        <p class="text-gray-600"><i class="fas fa-phone-alt mr-2"></i>+123 456 7890</p>
-                        <p class="text-gray-600"><i class="fas fa-envelope mr-2"></i>info@tedxkanke.com</p>
+                        <div class="space-y-2">
+                            <label for="email" class="text-sm font-medium">Email</label>
+                            <input type="email" id="email"
+                                class="flex h-10 w-full rounded border border-gray-300 px-3 py-2 text-sm focus:ring-gray-900 focus:border-gray-900"
+                                placeholder="Enter your email">
+                        </div>
+                        <div class="space-y-2">
+                            <label for="phone" class="text-sm font-medium">Phone Number</label>
+                            <input type="tel" id="phone"
+                                class="flex h-10 w-full rounded border border-gray-300 px-3 py-2 text-sm focus:ring-gray-900 focus:border-gray-900"
+                                placeholder="Enter your phone number">
+                        </div>
+                        <div class="space-y-2">
+                            <label for="role" class="text-sm font-medium">Select Your Role</label>
+                            <select name="role" id="role" class="flex h-10 w-full rounded border border-gray-300 px-3 py-2 text-sm focus:ring-gray-900 focus:border-gray-900">
+                                <option value="0">Choose Your Role</option>
+                                <option value="1">Volunteer</option>
+                                <option value="2">Sponsor</option>
+                            </select>
+                        </div>
+                        
+                        <div class="space-y-2">
+                            <label for="message" class="text-sm font-medium">Message</label>
+                            <textarea id="message"
+                                class="flex w-full rounded border border-gray-300 px-3 py-2 text-sm focus:ring-gray-900 focus:border-gray-900 min-h-[100px]"
+                                placeholder="Enter your message"></textarea>
+                        </div>
+                        <button
+                            class="w-full flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 text-white h-10 px-4 py-2 rounded shadow-sm bg-gray-900 hover:bg-gray-800 focus:ring-gray-900">
+                            <span class="mr-2">Submit</span><i class="fa-regular fa-paper-plane"></i>
+                        </button>
                     </div>
                 </div>
             </div>
         </section>
+    </div>
+
+
     </div>
     <!-- Footer Section -->
     <footer class="bg-gray-900 text-white py-4">
