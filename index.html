@@ -22,7 +22,6 @@
         <div class="container mx-auto flex justify-between items-center max-w-screen-xl mx-auto">
             <a href="#" class="flex items-center">
                 <img src="assets/asset 0.webp" alt="TEDxKanke Logo" class="h-12 mr-2">
-                <!-- <span class="text-xl font-bold">TEDxKanke</span> -->
             </a>
             <div class="block lg:hidden">
                 <button id="menu-toggle"
@@ -35,7 +34,24 @@
             </div>
             <div class="hidden lg:block">
                 <a href="/" class="mx-2 transition duration-300 hover:text-gray-300">Home</a>
-                <a href="event.html" class="mx-2 transition duration-300 hover:text-gray-300">Events</a>
+                <div class="dropdown inline-block relative">
+                    <button class="mx-2 transition duration-300 hover:text-gray-300 focus:outline-none">Events</button>
+                    <ul class="dropdown-menu absolute hidden text-gray-700 pt-1">
+                        <li><a href="event.html"
+                                class="whitespace-nowrap block py-2 w-full px-2 text-white text-sm bg-gray-800 transition duration-300">Independent
+                                Event</a></li>
+                        <li><a href="#"
+                                class="whitespace-nowrap block py-2 w-full px-2 text-sm text-white bg-gray-800 transition duration-300">TEDxKankeStudio
+                                Event</a></li>
+                        <li><a href="#"
+                                class="whitespace-nowrap block py-2 w-full px-2 text-sm text-white bg-gray-800 transition duration-300">TEDxKanke
+                                Countdown Event</a></li>
+                        <li><a href="#"
+                                class="whitespace-nowrap block py-2 w-full px-2 text-sm text-white bg-gray-800 transition duration-300">TEDxKankeSalon</a>
+                        </li>
+                        <!-- Add more events as needed -->
+                    </ul>
+                </div>
                 <a href="speaker.html" class="mx-2 transition duration-300 hover:text-gray-300">Speakers</a>
                 <a href="#about" class="mx-2 transition duration-300 hover:text-gray-300">About</a>
                 <a href="#contact" class="mx-2 transition duration-300 hover:text-gray-300">Contact</a>
@@ -46,10 +62,46 @@
     <!-- Mobile Menu -->
     <div id="mobile-menu" class="bg-gray-900 text-white px-4 pt-2 pb-8 lg:hidden" style="display: none;">
         <a href="#" class="block py-2 px-4 text-sm hover:bg-gray-800 transition duration-300">Home</a>
+        <div class="dropdown inline-block relative">
+            <button class="mx-2 transition duration-300 hover:text-gray-300 focus:outline-none">Events</button>
+            <ul class="dropdown-menu absolute hidden text-gray-700 pt-1">
+                <li><a href="event.html"
+                        class="block py-2 px-4 text-white text-sm bg-gray-800 transition duration-300">Independent
+                        Event</a></li>
+                <li><a href="#"
+                        class="block py-2 px-4 text-sm text-white bg-gray-800 transition duration-300">TEDxKankeStudio
+                        Event</a></li>
+                <li><a href="#" class="block py-2 px-4 text-sm text-white bg-gray-800 transition duration-300">TEDxKanke
+                        Countdown Event</a></li>
+                <li><a href="#"
+                        class="block py-2 px-4 text-sm text-white bg-gray-800 transition duration-300">TEDxKankeSalon</a>
+                </li>
+                <!-- Add more events as needed -->
+            </ul>
+        </div>
         <a href="#speakers" class="block py-2 px-4 text-sm hover:bg-gray-800 transition duration-300">Speakers</a>
         <a href="#about" class="block py-2 px-4 text-sm hover:bg-gray-800 transition duration-300">About</a>
         <a href="#contact" class="block py-2 px-4 text-sm hover:bg-gray-800 transition duration-300">Contact</a>
     </div>
+
+    <script>
+        // Toggle dropdown menu
+        document.querySelectorAll('.dropdown').forEach(dropdown => {
+            const button = dropdown.querySelector('button');
+            const menu = dropdown.querySelector('.dropdown-menu');
+
+            button.addEventListener('click', () => {
+                menu.classList.toggle('hidden');
+            });
+
+            // Close dropdown when clicking outside
+            window.addEventListener('click', e => {
+                if (!dropdown.contains(e.target)) {
+                    menu.classList.add('hidden');
+                }
+            });
+        });
+    </script>
 
 
     <div class="container max-w-screen-xl mx-auto">
