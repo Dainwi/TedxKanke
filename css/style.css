@@ -7,7 +7,7 @@
 
 /* Custom scrollbar track */
 ::-webkit-scrollbar {
-    width: 10px;
+    width: 5px;
 }
 
 /* Custom scrollbar thumb */

@@ -21,6 +21,7 @@
 <body class="bg-gray-100 font-sans">
 
     <!-- Navigation Bar -->
+    <!-- Navigation Bar -->
     <nav class="bg-gray-900 text-white p-4">
         <div class="container mx-auto flex justify-between items-center max-w-screen-xl mx-auto">
             <a href="#" class="flex items-center">
@@ -55,12 +56,29 @@
                         <!-- Add more events as needed -->
                     </ul>
                 </div>
+                <div class="dropdown inline-block relative">
+                    <button
+                        class="mx-2 transition duration-300 hover:text-gray-300 focus:outline-none">Discover</button>
+                    <ul class="dropdown-menu absolute hidden text-gray-700 pt-1">
+                        <li><a href="events.html"
+                                class="whitespace-nowrap block py-2 w-full px-2 text-sm text-white bg-gray-800 transition duration-300">TEDxKanke
+                                Events</a></li>
+                        <li><a href="#"
+                                class="whitespace-nowrap block py-2 w-full px-2 text-sm text-white bg-gray-800 transition duration-300">Gallery</a>
+                        </li>
+                        <li><a href="#"
+                                class="whitespace-nowrap block py-2 w-full px-2 text-sm text-white bg-gray-800 transition duration-300">Media</a>
+                        </li>
+                        <!-- Add more options as needed -->
+                    </ul>
+                </div>
                 <a href="speaker.html" class="mx-2 transition duration-300 hover:text-gray-300">Speakers</a>
                 <a href="#about" class="mx-2 transition duration-300 hover:text-gray-300">About</a>
-                <a href="#contact" class="mx-2 transition duration-300 hover:text-gray-300">Contact</a>
+                <a href="#joinus" class="mx-2 transition duration-300 hover:text-gray-300">Join Us</a>
             </div>
         </div>
     </nav>
+
 
     <!-- Mobile Menu -->
     <div id="mobile-menu" class="bg-gray-900 text-white px-4 pt-2 pb-8 lg:hidden" style="display: none;">
@@ -83,8 +101,23 @@
             </ul>
         </div>
         <a href="#speakers" class="block py-2 px-4 text-sm hover:bg-gray-800 transition duration-300">Speakers</a>
+        <div class="dropdown inline-block relative">
+            <button class="mx-2 transition duration-300 hover:text-gray-300 focus:outline-none">Discover</button>
+            <ul class="dropdown-menu absolute hidden text-gray-700 pt-1">
+                <li><a href="events.html"
+                        class="whitespace-nowrap block py-2 w-full px-2 text-sm text-white bg-gray-800 transition duration-300">TEDxKanke
+                        Events</a></li>
+                <li><a href="#"
+                        class="whitespace-nowrap block py-2 w-full px-2 text-sm text-white bg-gray-800 transition duration-300">Gallery</a>
+                </li>
+                <li><a href="#"
+                        class="whitespace-nowrap block py-2 w-full px-2 text-sm text-white bg-gray-800 transition duration-300">Media</a>
+                </li>
+                <!-- Add more options as needed -->
+            </ul>
+        </div>
         <a href="#about" class="block py-2 px-4 text-sm hover:bg-gray-800 transition duration-300">About</a>
-        <a href="#contact" class="block py-2 px-4 text-sm hover:bg-gray-800 transition duration-300">Contact</a>
+        <a href="#joinus" class="block py-2 px-4 text-sm hover:bg-gray-800 transition duration-300">Join Us</a>
     </div>
 
 
@@ -109,13 +142,14 @@
                         <div class="w-full max-w-sm space-y-2 space-x-3">
                             <button
                                 class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 text-primary-foreground text-white h-10 px-4 py-2 rounded shadow-sm bg-gray-900 hover:bg-white hover:text-gray-800 border hover:border-gray-800 focus:ring-gray-900">
-                                <span class="m-2">Upcomming Events</span>
+                                <span class="m-2">Upcoming Events</span>
                             </button>
-                            <button
-                                class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 text-primary-foreground text-white h-10 px-4 py-2 rounded shadow-sm text-gray-800 hover:text-white border border-gray-800 hover:bg-gray-800 focus:ring-gray-900">
-                                <a href="#joinus" class="m-2">Join Us</a>
-                            </button>
+                            <a href="#joinus"
+                                class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 text-primary-foreground text-white h-10 px-4 py-2 rounded shadow-sm bg-white text-gray-800 hover:bg-gray-800 border border-gray-800 hover:text-white focus:ring-gray-900">
+                                <span class="m-2">Join Us</span>
+                            </a>
                         </div>
+
                     </div>
                 </div>
             </div>
@@ -406,7 +440,7 @@
 
         <!-- Join Us Section -->
         <section class="bg-white rounded mb-14">
-            <div class="w-full py-4 md:py-24 lg:py-32 max-w-screen-sm mx-auto" id="contact">
+            <div class="w-full py-4 md:py-24 lg:py-32 max-w-screen-sm mx-auto" id="joinus">
                 <div class="container grid gap-6 px-4 md:px-6">
                     <div class="space-y-2">
                         <h2 class="text-3xl font-bold sm:text-5xl text-center">Get Involved</h2>
