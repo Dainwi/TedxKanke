@@ -1,47 +1,32 @@
-// document.getElementById('menu-toggle').addEventListener('click', function () {
-//     var mobileMenu = document.getElementById('mobile-menu');
-//     if (mobileMenu.style.display === 'block' || mobileMenu.style.display === '') {
-//         mobileMenu.style.display = 'none';
-//     } else {
-//         mobileMenu.style.display = 'block';
-//     }
-// });
+document.addEventListener("DOMContentLoaded", function() {
+    const menuToggle = document.getElementById('menu-toggle');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const dropdownButtons = document.querySelectorAll('.dropdown > button');
+    const dropdownMenus = document.querySelectorAll('.dropdown-menu');
 
-// // Close menu
-// document.addEventListener('click', function (e) {
-//     var mobileMenu = document.getElementById('mobile-menu');
-//     var menuToggle = document.getElementById('menu-toggle');
-//     if (!mobileMenu.contains(e.target) && e.target !== menuToggle) {
-//         mobileMenu.style.display = 'none';
-//     }
-// });
-
-// // Toggle dropdown menu on hover
-document.querySelectorAll('.dropdown').forEach(dropdown => {
-    const button = dropdown.querySelector('button');
-    const menu = dropdown.querySelector('.dropdown-menu');
-
-    dropdown.addEventListener('mouseenter', () => {
-        menu.classList.remove('hidden');
+    // Toggle mobile menu visibility
+    menuToggle.addEventListener('click', () => {
+        mobileMenu.classList.toggle('hidden');
     });
 
-    dropdown.addEventListener('mouseleave', () => {
-        menu.classList.add('hidden');
-    });
-});
+    // Show dropdown menus on hover and close when mouse leaves dropdown area
+    dropdownButtons.forEach((button, index) => {
+        const dropdownMenu = dropdownMenus[index];
 
+        button.addEventListener('mouseenter', () => {
+            dropdownMenu.classList.remove('hidden');
+        });
 
-// JavaScript for mobile menu toggle
-document.addEventListener("DOMContentLoaded", function () {
-    const menuToggle = document.getElementById("menu-toggle");
-    const mobileMenu = document.getElementById("mobile-menu");
+        button.addEventListener('mouseleave', () => {
+            dropdownMenu.classList.add('hidden');
+        });
 
-    // Toggle the display of mobile menu when clicking the menu toggle button
-    menuToggle.addEventListener("click", function () {
-        if (mobileMenu.style.display === "block") {
-            mobileMenu.style.display = "none";
-        } else {
-            mobileMenu.style.display = "block";
-        }
+        dropdownMenu.addEventListener('mouseenter', () => {
+            dropdownMenu.classList.remove('hidden');
+        });
+
+        dropdownMenu.addEventListener('mouseleave', () => {
+            dropdownMenu.classList.add('hidden');
+        });
     });
 });
