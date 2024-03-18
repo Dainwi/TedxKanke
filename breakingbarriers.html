@@ -4,30 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Independent Events</title>
+    <title>Event Details</title>
+    <!-- Include Tailwind CSS -->
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-    <style>
-        /* Custom CSS to prevent video overflow */
-        .video-container {
-            position: relative;
-            padding-bottom: 56.25%;
-            /* 16:9 aspect ratio */
-            height: 0;
-            overflow: hidden;
-        }
 
-        .video-container iframe {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-        }
-    </style>
 </head>
 
 <body class="bg-gray-100">
-     <!-- Navigation Bar -->
+    <!-- Navigation Bar -->
     <nav class="bg-gray-900 text-white p-4">
         <div class="container mx-auto flex justify-between items-center max-w-screen-xl mx-auto">
             <a href="/" class="flex items-center">
@@ -120,36 +104,111 @@
             <a href="contact.html" class="mx-2 transition duration-300 hover:text-gray-300">Contact Us</a>
         </div>
     </div>
+    <div class="container mx-auto py-8">
+        <h1 class="text-3xl font-bold text-center mb-8">Event Details</h1>
 
+        <!-- Event Information -->
+        <div class="bg-white p-6 rounded-lg shadow-md mb-8 flex justify-between flex-wrap sm:flex-nowrap">
+            <div class="p-4">
+                <h2 class="text-2xl font-semibold mb-4">TEDxKANKE 2020 : BREAKING BARRIERS</h2>
+                <p class="text-gray-600 mb-4">Date: March 12, 2021</p>
+                <!-- <p class="text-gray-600 mb-4">Location: City, Country</p> -->
+                <p class="text-gray-600">Description: Annual event which takes place once in a year. It brings our local, national and global innovators, change makers, and design thinkers together to inspire critical thinking by sharing powerful ideas. </p>
+            </div>
+            <div class="video-container">
+                
+                <iframe class="rounded-lg" height="350" width="562" src="https://www.youtube.com/embed/he3hhClR7uQ?list=PLZbTD9N8IkS5eeBJnPbP3HQBaAOsU9MWr" title="Breaking Barriers and Self Empowerment | Manju Jakhar | TEDxKanke" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+        </div>
 
-
-
-
-    <main class="container mx-auto py-8">
-        <section class="mb-8">
-            <h2 class="text-2xl font-bold mb-4 text-center">TEDxKANKE Studio</h2>
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- Event Card -->
-                <a href="thehappytribe.html">
-                <div class="border border-gray-300 p-4 rounded-lg">
-                    <div class="video-container">
-                        <iframe class="rounded-lg" src="https://www.youtube.com/embed/YfoE1TXdFTI?list=PLZbTD9N8IkS5F22Ku4qTmP7rdHz6wq7TR" title="Enhance your Life by altering your Surrounding. | Akshat Jain | TEDxKankeStudio" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                    </div>
-                    <h3 class="text-xl font-semibold mt-4 mb-2">TEDxKANKE Studio 2021 : The Happy Tribe</h3>
-                    <p class="text-gray-600">April 07, 2024</p>
-                    <p class="text-gray-600">Speakers: Aline Dahmen, Laura Christie Khanna, Akshat Jain, Ashmi & Manan
-                        Mistry</p>
+          <!-- Speakers Section -->
+          <section class="mb-8">
+            <h2 class="text-2xl font-semibold mb-4">Speakers</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+                <!-- Speaker Card - Manju Jakhar -->
+                <div class="bg-white p-4 shadow-md rounded-lg">
+                    <img src="assets/manjujakhar.webp" alt="Manju Jakhar" class="w-full h-48 object-cover rounded-md mb-4">
+                    <h3 class="text-lg font-semibold mb-2">Manju Jakhar</h3>
                 </div>
-            </a>
 
-                <!-- More event cards can be added here -->
+                <!-- Speaker Card - Deepak Vohra -->
+                <div class="bg-white p-4 shadow-md rounded-lg">
+                    <img src="assets/deepakvohra.webp" alt="Deepak Vohra" class="w-full h-48 object-cover rounded-md mb-4">
+                    <h3 class="text-lg font-semibold mb-2">Deepak Vohra</h3>
+                </div>
+
+                <!-- Speaker Card - Amitesh Anand -->
+                <div class="bg-white p-4 shadow-md rounded-lg">
+                    <img src="assets/amiteshanand.webp" alt="Amitesh Anand" class="w-full h-48 object-cover rounded-md mb-4">
+                    <h3 class="text-lg font-semibold mb-2">Amitesh Anand</h3>
+                </div>
+
+                <!-- Speaker Card - Caroline Chavier -->
+                <div class="bg-white p-4 shadow-md rounded-lg">
+                    <img src="assets/carolinechavier.webp" alt="Caroline Chavier" class="w-full h-48 object-cover rounded-md mb-4">
+                    <h3 class="text-lg font-semibold mb-2">Caroline Chavier</h3>
+                </div>
+
+                <!-- Speaker Card - Siddharth Kaushal -->
+                <div class="bg-white p-4 shadow-md rounded-lg">
+                    <img src="assets/siddharthkaushal.webp" alt="Siddharth Kaushal" class="w-full h-48 object-cover rounded-md mb-4">
+                    <h3 class="text-lg font-semibold mb-2">Siddharth Kaushal</h3>
+                </div>
+
+                <!-- Speaker Card - Hannah Kern -->
+                <div class="bg-white p-4 shadow-md rounded-lg">
+                    <img src="assets/hannahkern.webp" alt="Hannah Kern" class="w-full h-48 object-cover rounded-md mb-4">
+                    <h3 class="text-lg font-semibold mb-2">Hannah Kern</h3>
+                </div>
+
+                <!-- Speaker Card - Srikanth Sundrarajan -->
+                <div class="bg-white p-4 shadow-md rounded-lg">
+                    <img src="assets/srikanthsundrarajan.webp" alt="Srikanth Sundrarajan" class="w-full h-48 object-cover rounded-md mb-4">
+                    <h3 class="text-lg font-semibold mb-2">Srikanth Sundrarajan</h3>
+                </div>
+
+                <!-- Speaker Card - Nandita Nagangoudar -->
+                <div class="bg-white p-4 shadow-md rounded-lg">
+                    <img src="assets/nanditanagangoudar.webp" alt="Nandita Nagangoudar" class="w-full h-48 object-cover rounded-md mb-4">
+                    <h3 class="text-lg font-semibold mb-2">Nandita Nagangoudar</h3>
+                </div>
+
+                <!-- Speaker Card - Yasharth Goyal -->
+                <div class="bg-white p-4 shadow-md rounded-lg">
+                    <img src="assets/yasharthgoyal.webp" alt="Yasharth Goyal" class="w-full h-48 object-cover rounded-md mb-4">
+                    <h3 class="text-lg font-semibold mb-2">Yasharth Goyal</h3>
+                </div>
+
+                <!-- Speaker Card - Sumit Kutani -->
+                <div class="bg-white p-4 shadow-md rounded-lg">
+                    <img src="assets/sumitkutani.webp" alt="Sumit Kutani" class="w-full h-48 object-cover rounded-md mb-4">
+                    <h3 class="text-lg font-semibold mb-2">Sumit Kutani</h3>
+                </div>
+
+                <!-- Speaker Card - Nirmal Saranna -->
+                <div class="bg-white p-4 shadow-md rounded-lg">
+                    <img src="assets/nirmalsaranna.webp" alt="Nirmal Saranna" class="w-full h-48 object-cover rounded-md mb-4">
+                    <h3 class="text-lg font-semibold mb-2">Nirmal Saranna</h3>
+                </div>
+
+                <!-- Speaker Card - Clive Vaz -->
+                <div class="bg-white p-4 shadow-md rounded-lg">
+                    <img src="assets/clivevaz.webp" alt="Clive Vaz" class="w-full h-48 object-cover rounded-md mb-4">
+                    <h3 class="text-lg font-semibold mb-2">Clive Vaz</h3>
+                </div>
             </div>
         </section>
-    </main>
-
-
+        <!-- Sponsors Section -->
+        <!-- <section>
+            <h2 class="text-2xl font-semibold mb-4">Sponsors</h2>
+            <div class="flex flex-wrap items-center justify-center gap-4">
+                <img src="sponsor1.png" alt="Sponsor 1" class="w-24 h-auto">
+    
+            </div>
+        </section> -->
+    </div>
     <!-- Footer Section -->
-    <footer class="bg-gray-900 text-white py-8  w-full">
+    <footer class="bg-gray-900 text-white py-8 w-full">
         <div class="container px-4 mx-auto">
             <div class="footer-top flex justify-between items-center flex-wrap sm:flex-nowrap">
                 <div class="footer-bottom">

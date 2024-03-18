@@ -4,30 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Independent Events</title>
+    <title>Event Details</title>
+    <!-- Include Tailwind CSS -->
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-    <style>
-        /* Custom CSS to prevent video overflow */
-        .video-container {
-            position: relative;
-            padding-bottom: 56.25%;
-            /* 16:9 aspect ratio */
-            height: 0;
-            overflow: hidden;
-        }
 
-        .video-container iframe {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-        }
-    </style>
 </head>
 
 <body class="bg-gray-100">
-     <!-- Navigation Bar -->
+    <!-- Navigation Bar -->
     <nav class="bg-gray-900 text-white p-4">
         <div class="container mx-auto flex justify-between items-center max-w-screen-xl mx-auto">
             <a href="/" class="flex items-center">
@@ -120,36 +104,73 @@
             <a href="contact.html" class="mx-2 transition duration-300 hover:text-gray-300">Contact Us</a>
         </div>
     </div>
+    <div class="container mx-auto py-8">
+        <h1 class="text-3xl font-bold text-center mb-8">Event Details</h1>
 
+        <!-- Event Information -->
+        <div class="bg-white p-6 rounded-lg shadow-md mb-8 flex justify-between flex-wrap sm:flex-nowrap">
+            <div class="p-4">
+                <h2 class="text-2xl font-semibold mb-4">TEDxKANKE Salon 2022 : Breaking the Loop</h2>
+                <p class="text-gray-600 mb-4">Date: Sep 17, 2022</p>
+                <!-- <p class="text-gray-600 mb-4">Location: City, Country</p> -->
+                <p class="text-gray-600">Description:   At a TEDx salon, attendees watch TED Talks, sometimes host a few speakers (though it’s not required) and have informal discussions about the talks they witnessed.
 
-
-
-
-    <main class="container mx-auto py-8">
-        <section class="mb-8">
-            <h2 class="text-2xl font-bold mb-4 text-center">TEDxKANKE Studio</h2>
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- Event Card -->
-                <a href="thehappytribe.html">
-                <div class="border border-gray-300 p-4 rounded-lg">
-                    <div class="video-container">
-                        <iframe class="rounded-lg" src="https://www.youtube.com/embed/YfoE1TXdFTI?list=PLZbTD9N8IkS5F22Ku4qTmP7rdHz6wq7TR" title="Enhance your Life by altering your Surrounding. | Akshat Jain | TEDxKankeStudio" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                    </div>
-                    <h3 class="text-xl font-semibold mt-4 mb-2">TEDxKANKE Studio 2021 : The Happy Tribe</h3>
-                    <p class="text-gray-600">April 07, 2024</p>
-                    <p class="text-gray-600">Speakers: Aline Dahmen, Laura Christie Khanna, Akshat Jain, Ashmi & Manan
-                        Mistry</p>
-                </div>
-            </a>
-
-                <!-- More event cards can be added here -->
+                    In the spirit of ideas worth spreading, TEDx is a program of local, self-organized events that bring people together to share a TED-like experience. At a TEDx event, TEDTalks video and live speakers combine to spark deep discussion and connection in a small group.</p>
             </div>
-        </section>
-    </main>
+            <div class="video-container">
+                <a href="https://youtu.be/gLdz-KBsMns">
+                    <img src="assets/Salon Event 2022.webp" alt="Salon Event">
+                </a>
+            </div>
+            
+        </div>
 
-
+             <!-- Speakers Section -->
+             <section class="mb-8">
+                <h2 class="text-2xl font-semibold mb-4">Speakers</h2>
+                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+                    <!-- Speaker Card - Rohit Tripathy -->
+                    <div class="bg-white p-4 shadow-md rounded-lg">
+                        <img src="assets/rohittripathy.webp" alt="Rohit Tripathy" class="w-full h-48 object-cover rounded-md mb-4">
+                        <h3 class="text-lg font-semibold mb-2">Rohit Tripathy</h3>
+                    </div>
+    
+                    <!-- Speaker Card - Mary Stella Michael -->
+                    <div class="bg-white p-4 shadow-md rounded-lg">
+                        <img src="assets/marystellamichael.webp" alt="Mary Stella Michael" class="w-full h-48 object-cover rounded-md mb-4">
+                        <h3 class="text-lg font-semibold mb-2">Mary Stella Michael</h3>
+                    </div>
+    
+                    <!-- Speaker Card - Gaurav Manohar Marathe -->
+                    <div class="bg-white p-4 shadow-md rounded-lg">
+                        <img src="assets/gauravmanoharmarathe.webp" alt="Gaurav Manohar Marathe" class="w-full h-48 object-cover rounded-md mb-4">
+                        <h3 class="text-lg font-semibold mb-2">Gaurav Manohar Marathe</h3>
+                    </div>
+    
+                    <!-- Speaker Card - Sridhar Rajagopal -->
+                    <div class="bg-white p-4 shadow-md rounded-lg">
+                        <img src="assets/sridharrajagopal.webp" alt="Sridhar Rajagopal" class="w-full h-48 object-cover rounded-md mb-4">
+                        <h3 class="text-lg font-semibold mb-2">Sridhar Rajagopal</h3>
+                    </div>
+    
+                    <!-- Speaker Card - Subhro Chatterjee -->
+                    <div class="bg-white p-4 shadow-md rounded-lg">
+                        <img src="assets/subhrochatterjee.webp" alt="Subhro Chatterjee" class="w-full h-48 object-cover rounded-md mb-4">
+                        <h3 class="text-lg font-semibold mb-2">Subhro Chatterjee</h3>
+                    </div>
+                </div>
+            </section>
+       <!-- Sponsors Section -->
+        <!-- <section>
+            <h2 class="text-2xl font-semibold mb-4">Sponsors</h2>
+            <div class="flex flex-wrap items-center justify-center gap-4">
+                <img src="sponsor1.png" alt="Sponsor 1" class="w-24 h-auto">
+    
+            </div>
+        </section> -->
+    </div>
     <!-- Footer Section -->
-    <footer class="bg-gray-900 text-white py-8  w-full">
+    <footer class="bg-gray-900 text-white py-8 w-full">
         <div class="container px-4 mx-auto">
             <div class="footer-top flex justify-between items-center flex-wrap sm:flex-nowrap">
                 <div class="footer-bottom">

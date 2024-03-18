@@ -27,22 +27,64 @@
 </head>
 
 <body class="bg-gray-100">
-<!-- Navigation Bar -->
-<nav class="bg-gray-900 text-white p-4">
-    <div class="container mx-auto flex justify-between items-center max-w-screen-xl mx-auto">
-        <a href="/" class="flex items-center">
-            <img src="assets/asset 0.webp" alt="TEDxKanke Logo" class="h-12 mr-2">
-        </a>
-        <div class="block lg:hidden">
-            <button id="menu-toggle"
-                class="flex items-center px-3 py-2 border rounded text-gray-200 border-gray-400 hover:text-white hover:border-white transition duration-300">
-                <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                    <title>Menu</title>
-                    <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
-                </svg>
-            </button>
+    <!-- Navigation Bar -->
+    <nav class="bg-gray-900 text-white p-4">
+        <div class="container mx-auto flex justify-between items-center max-w-screen-xl mx-auto">
+            <a href="/" class="flex items-center">
+                <img src="assets/asset 0.webp" alt="TEDxKanke Logo" class="h-12 mr-2">
+            </a>
+            <div class="block lg:hidden">
+                <button id="menu-toggle"
+                    class="flex items-center px-3 py-2 border rounded text-gray-200 border-gray-400 hover:text-white hover:border-white transition duration-300">
+                    <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                        <title>Menu</title>
+                        <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
+                    </svg>
+                </button>
+            </div>
+            <div class="hidden lg:block">
+                <div class="dropdown inline-block relative">
+                    <button class="mx-2 transition duration-300 hover:text-gray-300 focus:outline-none">Events</button>
+                    <ul class="dropdown-menu absolute hidden text-gray-700 pt-1 z-50">
+                        <li><a href="independentEvent.html"
+                                class="whitespace-nowrap block py-2 w-full px-2 text-sm text-white bg-gray-800 transition duration-300">Independent
+                                Event</a></li>
+                        <li><a href="TEDxKankeStudio.html"
+                                class="whitespace-nowrap block py-2 w-full px-2 text-sm text-white bg-gray-800 transition duration-300">TEDxKankeStudio
+                                Event</a></li>
+                        <li><a href="TEDxKANKEcountdown.html"
+                                class="whitespace-nowrap block py-2 w-full px-2 text-sm text-white bg-gray-800 transition duration-300">TEDxKanke
+                                Countdown Event</a></li>
+                        <li><a href="TEDxKankeSalon.html"
+                                class="whitespace-nowrap block py-2 w-full px-2 text-sm text-white bg-gray-800 transition duration-300">TEDxKankeSalon</a>
+                        </li>
+                    </ul>
+                </div>
+                <a href="https://www.youtube.com/@TEDx"
+                    class="mx-2 transition duration-300 hover:text-gray-300">Talks</a>
+                <div class="dropdown inline-block relative">
+                    <button
+                        class="mx-2 transition duration-300 hover:text-gray-300 focus:outline-none">Discover</button>
+                    <ul class="dropdown-menu absolute hidden text-gray-700 pt-1 z-50">
+                        <li><a href="events.html"
+                                class="whitespace-nowrap block py-2 w-full px-2 text-sm text-white bg-gray-800 transition duration-300">TEDxKanke
+                                Events</a></li>
+                        <li><a href="gallery.html"
+                                class="whitespace-nowrap block py-2 w-full px-2 text-sm text-white bg-gray-800 transition duration-300">Gallery</a>
+                        </li>
+                    </ul>
+                </div>
+                <a href="speaker.html" class="mx-2 transition duration-300 hover:text-gray-300">Speakers</a>
+                <a href="/#about" class="mx-2 transition duration-300 hover:text-gray-300">About</a>
+                <a href="/#joinus" class="mx-2 transition duration-300 hover:text-gray-300">Join Us</a>
+                <a href="contact.html" class="mx-2 transition duration-300 hover:text-gray-300">Contact Us</a>
+            </div>
         </div>
-        <div class="hidden lg:block">
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="bg-gray-900 text-white px-4 pt-2 pb-8 lg:hidden hidden">
+        <div class="flex flex-col items-center justify-between">
             <div class="dropdown inline-block relative">
                 <button class="mx-2 transition duration-300 hover:text-gray-300 focus:outline-none">Events</button>
                 <ul class="dropdown-menu absolute hidden text-gray-700 pt-1 z-50">
@@ -60,11 +102,9 @@
                     </li>
                 </ul>
             </div>
-            <a href="https://www.youtube.com/@TEDx"
-                class="mx-2 transition duration-300 hover:text-gray-300">Talks</a>
+            <a href="https://www.youtube.com/@TEDx" class="mx-2 transition duration-300 hover:text-gray-300">Talks</a>
             <div class="dropdown inline-block relative">
-                <button
-                    class="mx-2 transition duration-300 hover:text-gray-300 focus:outline-none">Discover</button>
+                <button class="mx-2 transition duration-300 hover:text-gray-300 focus:outline-none">Discover</button>
                 <ul class="dropdown-menu absolute hidden text-gray-700 pt-1 z-50">
                     <li><a href="events.html"
                             class="whitespace-nowrap block py-2 w-full px-2 text-sm text-white bg-gray-800 transition duration-300">TEDxKanke
@@ -80,46 +120,6 @@
             <a href="contact.html" class="mx-2 transition duration-300 hover:text-gray-300">Contact Us</a>
         </div>
     </div>
-</nav>
-
-<!-- Mobile Menu -->
-<div id="mobile-menu" class="bg-gray-900 text-white px-4 pt-2 pb-8 lg:hidden hidden">
-    <div class="flex flex-col items-center justify-between">
-        <div class="dropdown inline-block relative">
-            <button class="mx-2 transition duration-300 hover:text-gray-300 focus:outline-none">Events</button>
-            <ul class="dropdown-menu absolute hidden text-gray-700 pt-1 z-50">
-                <li><a href="independentEvent.html"
-                        class="whitespace-nowrap block py-2 w-full px-2 text-sm text-white bg-gray-800 transition duration-300">Independent
-                        Event</a></li>
-                <li><a href="TEDxKankeStudio.html"
-                        class="whitespace-nowrap block py-2 w-full px-2 text-sm text-white bg-gray-800 transition duration-300">TEDxKankeStudio
-                        Event</a></li>
-                <li><a href="TEDxKANKEcountdown.html"
-                        class="whitespace-nowrap block py-2 w-full px-2 text-sm text-white bg-gray-800 transition duration-300">TEDxKanke
-                        Countdown Event</a></li>
-                <li><a href="TEDxKankeSalon.html"
-                        class="whitespace-nowrap block py-2 w-full px-2 text-sm text-white bg-gray-800 transition duration-300">TEDxKankeSalon</a>
-                </li>
-            </ul>
-        </div>
-        <a href="https://www.youtube.com/@TEDx" class="mx-2 transition duration-300 hover:text-gray-300">Talks</a>
-        <div class="dropdown inline-block relative">
-            <button class="mx-2 transition duration-300 hover:text-gray-300 focus:outline-none">Discover</button>
-            <ul class="dropdown-menu absolute hidden text-gray-700 pt-1 z-50">
-                <li><a href="events.html"
-                        class="whitespace-nowrap block py-2 w-full px-2 text-sm text-white bg-gray-800 transition duration-300">TEDxKanke
-                        Events</a></li>
-                <li><a href="gallery.html"
-                        class="whitespace-nowrap block py-2 w-full px-2 text-sm text-white bg-gray-800 transition duration-300">Gallery</a>
-                </li>
-            </ul>
-        </div>
-        <a href="speaker.html" class="mx-2 transition duration-300 hover:text-gray-300">Speakers</a>
-        <a href="/#about" class="mx-2 transition duration-300 hover:text-gray-300">About</a>
-        <a href="/#joinus" class="mx-2 transition duration-300 hover:text-gray-300">Join Us</a>
-        <a href="contact.html" class="mx-2 transition duration-300 hover:text-gray-300">Contact Us</a>
-    </div>
-</div>
 
 
 
@@ -130,15 +130,19 @@
             <h2 class="text-2xl font-bold mb-4 text-center">TEDxKANKE Countdown</h2>
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
                 <!-- Event Card -->
+
                 <div class="border border-gray-300 p-4 rounded-lg">
                     <div class="video-container">
                         <a href="https://youtube.com/playlist?list=PLZbTD9N8IkS7VnoenzDi3YYpch5syGt6d">
                             <img src="assets/Countdown 2020.webp" alt="" srcset="">
                         </a>
                     </div>
-                    <h3 class="text-xl font-semibold mt-4 mb-2">TEDxKANKE Countdown 2020 : Zero Carbon World</h3>
-                    <p class="text-gray-600">October 31, 2020</p>
-                    <p class="text-gray-600">Speakers: Ovais Sarmad, Kanchi Kohli, Richie Richardson, Peepal Baba, Ridhima Pandey, Licpriya Kangujam, Licpriya Kangujam</p>
+                    <a href="zerocarbonworld.html">
+                        <h3 class="text-xl font-semibold mt-4 mb-2">TEDxKANKE Countdown 2020 : Zero Carbon World</h3>
+                        <p class="text-gray-600">October 31, 2020</p>
+                        <p class="text-gray-600">Speakers: Ovais Sarmad, Kanchi Kohli, Richie Richardson, Peepal Baba,
+                            Ridhima Pandey, Licpriya Kangujam, Licpriya Kangujam</p>
+                    </a>
                 </div>
 
 

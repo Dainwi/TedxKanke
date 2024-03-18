@@ -4,30 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Independent Events</title>
+    <title>Event Details</title>
+    <!-- Include Tailwind CSS -->
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-    <style>
-        /* Custom CSS to prevent video overflow */
-        .video-container {
-            position: relative;
-            padding-bottom: 56.25%;
-            /* 16:9 aspect ratio */
-            height: 0;
-            overflow: hidden;
-        }
 
-        .video-container iframe {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-        }
-    </style>
 </head>
 
 <body class="bg-gray-100">
-     <!-- Navigation Bar -->
+    <!-- Navigation Bar -->
     <nav class="bg-gray-900 text-white p-4">
         <div class="container mx-auto flex justify-between items-center max-w-screen-xl mx-auto">
             <a href="/" class="flex items-center">
@@ -120,36 +104,103 @@
             <a href="contact.html" class="mx-2 transition duration-300 hover:text-gray-300">Contact Us</a>
         </div>
     </div>
+    <div class="container mx-auto py-8">
+        <h1 class="text-3xl font-bold text-center mb-8">Event Details</h1>
 
+        <!-- Event Information -->
+        <div class="bg-white p-6 rounded-lg shadow-md mb-8 flex justify-between flex-wrap sm:flex-nowrap">
+            <div class="p-4">
+                <h2 class="text-2xl font-semibold mb-4">TEDxKANKE 2022: THE BILLION DREAMS</h2>
+                <p class="text-gray-600 mb-4">Date: April 07, 2024</p>
+                <!-- <p class="text-gray-600 mb-4">Location: City, Country</p> -->
+                <p class="text-gray-600">Description: Let’s usher the magic of dreams at TEDxKanke and unfold stories of
+                    people who dreamed and then turned mountains to live those dreams. We all have dreams, to take on
+                    the world, to make a difference in the lives of the billions. TEDxKanke brings to you some of those,
+                    who too dared to dream and made big. </p>
+            </div>
+            <div class="video-container">
+                <iframe class="rounded-lg" height="350" width="562"
+                    src="https://www.youtube.com/embed/dqC8FMKO2pM?list=PLZbTD9N8IkS5m5s1mcRgkOE-Q_le26bd5"
+                    frameborder="0" allowfullscreen></iframe>
+            </div>
+        </div>
 
-
-
-
-    <main class="container mx-auto py-8">
+        <!-- Speakers Section -->
         <section class="mb-8">
-            <h2 class="text-2xl font-bold mb-4 text-center">TEDxKANKE Studio</h2>
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- Event Card -->
-                <a href="thehappytribe.html">
-                <div class="border border-gray-300 p-4 rounded-lg">
-                    <div class="video-container">
-                        <iframe class="rounded-lg" src="https://www.youtube.com/embed/YfoE1TXdFTI?list=PLZbTD9N8IkS5F22Ku4qTmP7rdHz6wq7TR" title="Enhance your Life by altering your Surrounding. | Akshat Jain | TEDxKankeStudio" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                    </div>
-                    <h3 class="text-xl font-semibold mt-4 mb-2">TEDxKANKE Studio 2021 : The Happy Tribe</h3>
-                    <p class="text-gray-600">April 07, 2024</p>
-                    <p class="text-gray-600">Speakers: Aline Dahmen, Laura Christie Khanna, Akshat Jain, Ashmi & Manan
-                        Mistry</p>
+            <h2 class="text-2xl font-semibold mb-4">Speakers</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+                <!-- Speaker Card - Aakanksha Monga -->
+                <div class="bg-white p-4 shadow-md rounded-lg">
+                    <img src="assets/aakankshamonga.webp" alt="Aakanksha Monga"
+                        class="w-full h-48 object-cover rounded-md mb-4">
+                    <h3 class="text-lg font-semibold mb-2">Aakanksha Monga</h3>
                 </div>
-            </a>
 
-                <!-- More event cards can be added here -->
+                <!-- Speaker Card - Ali Afroz -->
+                <div class="bg-white p-4 shadow-md rounded-lg">
+                    <img src="assets/aliafroz.webp" alt="Ali Afroz" class="w-full h-48 object-cover rounded-md mb-4">
+                    <h3 class="text-lg font-semibold mb-2">Ali Afroz</h3>
+                </div>
+
+                <!-- Speaker Card - Angad Daryani -->
+                <div class="bg-white p-4 shadow-md rounded-lg">
+                    <img src="assets/user.webp" alt="Angad Daryani" class="w-full h-48 object-cover rounded-md mb-4">
+                    <h3 class="text-lg font-semibold mb-2">Angad Daryani</h3>
+                </div>
+
+                <!-- Speaker Card - Ankit Lal -->
+                <div class="bg-white p-4 shadow-md rounded-lg">
+                    <img src="assets/ankitlal.webp" alt="Ankit Lal" class="w-full h-48 object-cover rounded-md mb-4">
+                    <h3 class="text-lg font-semibold mb-2">Ankit Lal</h3>
+                </div>
+
+                <!-- Speaker Card - Marwan Abubaker -->
+                <div class="bg-white p-4 shadow-md rounded-lg">
+                    <img src="assets/user.webp" alt="Marwan Abubaker" class="w-full h-48 object-cover rounded-md mb-4">
+                    <h3 class="text-lg font-semibold mb-2">Marwan Abubaker</h3>
+                </div>
+
+                <!-- Speaker Card - Prashant Pitti -->
+                <div class="bg-white p-4 shadow-md rounded-lg">
+                    <img src="assets/prashantpitti.webp" alt="Prashant Pitti"
+                        class="w-full h-48 object-cover rounded-md mb-4">
+                    <h3 class="text-lg font-semibold mb-2">Prashant Pitti</h3>
+                </div>
+
+                <!-- Speaker Card - Satyarup Siddhanta -->
+                <div class="bg-white p-4 shadow-md rounded-lg">
+                    <img src="assets/satyarupsiddhanta.webp" alt="Satyarup Siddhanta"
+                        class="w-full h-48 object-cover rounded-md mb-4">
+                    <h3 class="text-lg font-semibold mb-2">Satyarup Siddhanta</h3>
+                </div>
+
+                <!-- Speaker Card - Shubhasish Chakraborty -->
+                <div class="bg-white p-4 shadow-md rounded-lg">
+                    <img src="assets/shubhasishchakraborty.webp" alt="Shubhasish Chakraborty"
+                        class="w-full h-48 object-cover rounded-md mb-4">
+                    <h3 class="text-lg font-semibold mb-2">Shubhasish Chakraborty</h3>
+                </div>
+
+                <!-- Speaker Card - Temsutula Imsong -->
+                <div class="bg-white p-4 shadow-md rounded-lg">
+                    <img src="assets/temsutulaimsong.webp" alt="Temsutula Imsong"
+                        class="w-full h-48 object-cover rounded-md mb-4">
+                    <h3 class="text-lg font-semibold mb-2">Temsutula Imsong</h3>
+                </div>
             </div>
         </section>
-    </main>
 
-
+       <!-- Sponsors Section -->
+        <!-- <section>
+            <h2 class="text-2xl font-semibold mb-4">Sponsors</h2>
+            <div class="flex flex-wrap items-center justify-center gap-4">
+                <img src="sponsor1.png" alt="Sponsor 1" class="w-24 h-auto">
+    
+            </div>
+        </section> -->
+    </div>
     <!-- Footer Section -->
-    <footer class="bg-gray-900 text-white py-8  w-full">
+    <footer class="bg-gray-900 text-white py-8 w-full">
         <div class="container px-4 mx-auto">
             <div class="footer-top flex justify-between items-center flex-wrap sm:flex-nowrap">
                 <div class="footer-bottom">
